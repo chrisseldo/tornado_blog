@@ -8,17 +8,20 @@ Quick &amp; simple blog using the Tornado framework
 2. Install & launch MySQL
 ` brew install mysql ` or `pip install mysql`
 
-3. Connect to MySql
+3. Install Python packages
+  - MySQL-python, torndb, and markdown (via `pip install`)
+
+4. Connect to MySql
 ```bash
 mysql -u root
 mysql> CREATE DATABASE blog;
 mysql> GRANT ALL PRIVILEGES ON blog.* TO 'blog'@'localhost' IDENTIFIED BY 'blog';
 ```
-4. Create the tables in your MySQL database
+5. Create the tables in your MySQL database
 ```bash
 mysql --user=blog --password=blog --database=blog < schema.sql
 ```
-5. Start your blog
+6. Start your blog
 ```bash
 ./blog.py
 ```
