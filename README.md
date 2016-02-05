@@ -6,15 +6,9 @@ Quick &amp; simple blog using the Tornado framework
 1. Install Tornado @ http://www.tornadoweb.org/
 
 2. Install & launch MySQL
-```bash
-brew install mysql
-```
-or
-```bash
-pip install mysql
-```
-3. Connect to MySql
+` brew install mysql ` or `pip install mysql`
 
+3. Connect to MySql
 ```bash
 mysql -u root
 mysql> CREATE DATABASE blog;
