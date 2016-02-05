@@ -17,7 +17,7 @@ mysql -u root
 mysql> CREATE DATABASE blog;
 mysql> GRANT ALL PRIVILEGES ON blog.* TO 'blog'@'localhost' IDENTIFIED BY 'blog';
 ```
-## Blog Database
+## Database
 
 1. Create the tables in your MySQL database
 ```bash
