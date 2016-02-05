@@ -17,11 +17,15 @@ mysql -u root
 mysql> CREATE DATABASE blog;
 mysql> GRANT ALL PRIVILEGES ON blog.* TO 'blog'@'localhost' IDENTIFIED BY 'blog';
 ```
-5. Create the tables in your MySQL database
+## Blog Database
+
+1. Create the tables in your MySQL database
 ```bash
 mysql --user=blog --password=blog --database=blog < schema.sql
 ```
-6. Start your blog
+## Start
+
+1. Start your blog
 ```bash
 ./blog.py
 ```
